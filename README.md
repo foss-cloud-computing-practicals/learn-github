@@ -2,146 +2,75 @@
 
 Created this new repository for analyzing the progress  of my learning.
 
-# Terminal Cheat Sheet
-
-pwd         # print working directory
-ls          # list files in directory
-cd          # change directory
-~           # home directory
-..          # up one directory
--           # previous working directory
-help        # get help
--h          # get help
---help      # get help
-man         # manual
-cat         # output the contents of a file
-mkdir       # create new directory
-open        # open a file with the associated program, a directory with Finder, or a URL with the default web browser
-ps          # list all running processes
-kill        # terminate existing process
-rmd         # permanently delete file
-rmdir       # remove directory
 
 ## Working with Git
 
 ### Quick Start
-git clone <url> 					# Clone directory
-git checkout -b <new-branch> 		# Create new local branch
-git push -u origin <new-branch> 	# Sync local branch with remote
-git checkout <branch> 				# Checkout branch
-git push origin <branch> 			# Push branch to remote
 
-git branch -d <branchname>   	# deletes local branch
-git push origin :<branchname>	# deletes remote branch
+git clone <url> 					
+     This creates a directory named open_framework (at your current local file system location), initializes a . git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version
+  
+git checkout -b <new-branch> 		
+     This create a branch in a repository
+  
+git push -u origin <new-branch> 	
+     Sync local branch with remote of the repository
+  
+git checkout <branch> 				
+    Checkout branch of the repository
+  
+git push origin <branch> 		
+    Push branch to remote
 
-git subtree push --prefix docs origin gh-pages  # push docs as subtree to gh-pages
-
-### Clone Directory
-git clone <url>
-
-
-
-### Create Project
-cd project/
-git init                    # initializes the repository
-git add .                   # add those 'unknown' files
-git commit                  # commit all changes, edit changelog entry
-git rm --cached <file>...   # ridiculously complicated command to undo, in case you forgot .gitignore
-
-
-
-### Branching and Merging
-git branch                          # show list of all branches (* is active)
-git checkout -b linux-work          # create a new branch named "linux-work"
-<make changes>
-git commit -a
-git checkout master                 # go back to master branch
-git merge linux-work                # merge changesets from linux-work (Git >= 1.5)
-git pull . linux-work               # merge changesets from linux-work (all Git versions)
-git branch -m <oldname> <newname>   # rename branch
-git branch -m <newname>             # rename current branch
-
-
-
-### Clone Directory
-git clone <url>
-
+git branch -d <branchname>  
+    deletes local branch
+  
+git push origin :<branchname>	
+   deletes remote branch
 
 
 ### Create Project
 cd project/
-git init                    # initializes the repository
-git add .                   # add those 'unknown' files
-git commit                  # commit all changes, edit changelog entry
-git rm --cached <file>...   # ridiculously complicated command to undo, in case you forgot .gitignore
+git init                   
+      initializes the repository
+      
+git add .                
+     add those 'unknown' files to the local repository
+  
+git add <filename>
+     add particular file to the local repository
+  
+git commit -m "message"          
+   commit all changes, edit changelog entry with breif of modification 
 
 
 
-### Branching and Merging
-git branch                          # show list of all branches (* is active)
-git checkout -b linux-work          # create a new branch named "linux-work"
-<make changes>
-git commit -a
-git checkout master                 # go back to master branch
-git merge linux-work                # merge changesets from linux-work (Git >= 1.5)
-git pull . linux-work               # merge changesets from linux-work (all Git versions)
-git branch -m <oldname> <newname>   # rename branch
-git branch -m <newname>             # rename current branch
 
+### Branching 
+git branch                        
+    This show list of all branches (* is active)
+    
+git branch -m <oldname> <newname>   
+   rename branch
 
+git branch -m <newname>           
+   rename current branch
+
+### Merge
+
+git merge
+     This integrate the branches together
 
 
 ### Delete Project
-git branch -d <branchname>   	# deletes local branch
-git push origin :<branchname>	# deletes remote branch
-git remote prune <branchname>	# update local/remote sync
+git branch -d <branchname> 
+   deletes local branch
+  
+git push origin :<branchname>	
+   deletes remote branch
+  
 
 
 
-### Merging Upstream
-
-git remote -v 									# Get list of remote branches
-git remote add upstream <upstream github url>	# Add original as upstream
-git remote -v 									# Check upstream
-
-git fetch upstream 								# Get original repo
-git checkout development						# Switch to main branch in local fork
-git merge upstream/development					# Merge original with fork
-
-git diff --name-only | uniq | xargs subl		# Fix conflicts in Sublime Text
-
-
-
-### Importing Patches
-git apply < ../p/foo.patch
-git commit -a
-
-
-
-### Exporting Patches
-<make changes>
-git commit -a -m "commit message"
-git format-patch HEAD^  # creates 0001-commit-message.txt
-                        # (HEAD^ means every patch since one revision before the
-                        # tip of the branch, also known as HEAD)
-
-
-
-
-### Inspecting Revisions
-
-# inspect history visually
-gitk    # this opens a Tk window, and shows you how the revisions are connected
-
-# inspect history
-git log     # this pipes a log of the current branch into your PAGER
-git log -p  # ditto, but append a patch after each commit message
-
-# inspect a specific commit
-git show HEAD   # show commit info, diffstat and patch
-                # of the tip of the current branch
-                
-                
-                
  Above commands can be used for accessing github repository .               
                 
