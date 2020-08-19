@@ -7,7 +7,7 @@ Created this new repository for analyzing the progress  of my learning.
 
 ### Quick Start
 
-git clone <url> 					
+## git clone <url> 					
      This creates a directory named open_framework (at your current local file system location), initializes a . git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version
   
 git checkout -b <new-branch> 		
