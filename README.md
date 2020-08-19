@@ -69,5 +69,40 @@ Created this new repository for analyzing the progress  of my learning.
 
 
 
- Above commands can be used for accessing github repository .               
+ Above commands can be used for accessing github repository .    
+ 
+ ### FOUR EYES PRINCIPLE
+
+        The Four eyes principle is a requirement that two individuals approve some action before it can be taken.
+        
+ 
+ ### BOY SCOUT
+ 
+         The boy scout rule says that you should leave the code at least as "clean" as you found it
+         
+### CLEAN CODE PRACTICES
+
+1 . Keep It Simple
+
+2. Understand Your Code
+
+3. Comments Are Your New Best Friends
+
+4. Don’t Repeat Yourself (DRY)
+
+5. Indent Your Code
+
+6. Naming Convention
+
+7. Explore
+
+8. Use Your Brain
+
+9. Test Runs
+
+10. Practice Your Art
+
+
+         
+        
                 
