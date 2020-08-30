@@ -72,11 +72,12 @@ Created this new repository for analyzing the progress  of my learning.
  Above commands can be used for accessing github repository .    
  
  ### FOUR EYES PRINCIPLE
+ ### Definition
 
         The Four eyes principle is a requirement that two individuals approve some action before it can be taken.
         The two-man rule is a control mechanism designed to achieve a high level of security for especially critical material or operations. Under this rule all access and actions requires the presence of two authorized people at all times.
 
-       ###Objective
+###Objective
           
           The objective of the control is to mitigate risks primarily of the following two types:
 
@@ -87,7 +88,7 @@ Created this new repository for analyzing the progress  of my learning.
 
           Depending on the context, potentially other types of risk may also arise from the absence of this control (e.g. Physical Damage)
 
-     ###Implementation
+ ###Implementation
      
           Implementing this control is relatively simple in document based approval processes. It requires:
 
@@ -115,7 +116,7 @@ Created this new repository for analyzing the progress  of my learning.
      
                           A total of four keys are thus required to initiate a launch.
 
-        ###Examples
+  ###Examples
 
           A classic example of implementing "Four Eyes" is in the Credit Approval Process where any credit decision must be reviewed and signed by a second independent person
 
